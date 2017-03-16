@@ -53,3 +53,66 @@ curent.show();
 });
 
 });
+
+
+
+// molbert
+
+ // image
+      $(document).ready(function(){
+     // $('.wrap-stand').append($('#ri-1'));
+      $('#r-1').fadeIn('slow', function() {        
+      });
+
+var arr_image=$('.wrap-stand img');
+     $('.rotatebutton').on('click', function(event) {
+        if ( $(this).hasClass('r-1') ) idkey='#r-1'; 
+         if ( $(this).hasClass('r-2') ) idkey='#r-2'; 
+          if ( $(this).hasClass('r-3') ) idkey='#r-3'; 
+           if ( $(this).hasClass('r-4') ) idkey='#r-4';  
+
+         arr_image.each(function(index, el) {
+                 if ($(this).is(':visible')) {
+                  $(this).fadeOut('slow', function() {
+                        $(idkey).fadeIn('slow', function() {
+                          
+                        }); 
+                  });
+                 }
+              
+      
+         });
+
+     });
+
+});
+
+      // text
+
+
+            $(document).ready(function(){
+      $('#tr-1').fadeIn('slow', function() {        
+      });
+
+var arr_text=$('.wrap-stand_text');
+     $('.rotatebutton').on('click', function(event) {
+        if ( $(this).hasClass('r-1') ) idkey_t='#tr-1'; 
+         if ( $(this).hasClass('r-2') ) idkey_t='#tr-2'; 
+          if ( $(this).hasClass('r-3') ) idkey_t='#tr-3'; 
+           if ( $(this).hasClass('r-4') ) idkey_t='#tr-4';  
+
+         arr_text.each(function(index, el) {
+                 if ($(this).is(':visible')) {
+                  $(this).fadeOut('slow', function() {
+                        $(idkey_t).fadeIn('slow', function() {
+                          
+                        }); 
+                  });
+                 }
+              
+      
+         });
+
+     });
+
+});

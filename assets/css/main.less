@@ -18,7 +18,18 @@
    }
   body *{
     font-family: Europe;
+    color:#575757;
   }  
+
+.about_comlplex_wrap{
+	padding-top: 5em;
+	.row{
+		padding-top:2em;
+		text-align: left;
+		text-indent: 1em;
+	}
+}
+
 
 
 #myCarousel_UP{
@@ -95,6 +106,16 @@
 	font-size: xx-large;
 	    font-weight: bold;
 }
+.caption{
+	    font-size: x-large;
+}
+.room_container{
+	padding-top: 3em;
+}
+.room_container_builder{
+padding-top: 3em;
+padding-bottom: 3em;	
+}
 // .navbar .navbar-collapse{
 // 	background-color: grey;
 // }
@@ -107,9 +128,9 @@
 }
 .stand{
 	    height: 450px;
-	// background: url(@standimage) 100% 100% no-repeat; /* Добавляем фон */
+	 background: url(@standimage) 50% 100% no-repeat; /* Добавляем фон */
 	   
-	  //  background-size: cover; /* Масштабируем фон */
+	   // background-size: cover; /* Масштабируем фон */
 }
 
 .form_div{
@@ -245,13 +266,18 @@ padding:2em;
 	 background: url(@perfect) 100% 100% no-repeat; /* Добавляем фон */
 		//background: url(@perfect) no-repeat; /* Добавляем фон */
 	background-size:  cover;
-
-	color:white;
+     
+	
 height: 64em;
+padding-top: 3em;
 .container{
 	padding-top: 7em;
 	// line-height: 10px;
 
+
+}
+.row *{
+ color:white;
 }
  
 }
@@ -306,6 +332,19 @@ height: 64em;
 		padding-bottom: 1em;
 }
 
+.paralax{
+	
+	 /* The image used */
+    background-image: url(@paralax);
+	 /* Full height */
+    height: 60em;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 
@@ -355,3 +394,66 @@ footer { background-color:#575756; min-height:350px; font-family: 'Europe', sans
  .bottom_ul li { float:left; line-height:40px;}
  .bottom_ul li:after { content:"/"; color:#FFF; margin-right:8px; margin-left:8px;}
  .bottom_ul li a { color:#FFF;  font-size:12px;}
+
+
+
+
+ .wrap-stand{
+ 	// line-height: 200px;
+
+line-height: 27;
+ }
+
+ .wrap-stand img {
+    padding-left: 3em;
+    vertical-align: middle;
+
+transform: perspective( 801px ) rotateY( 34deg ) rotateX( 8deg ) rotate(-4deg);
+
+}
+
+.rotatebutton{
+	transform: rotate(45deg);
+	width: 10px;
+	height: 10px;
+	background-color: @linecolor;
+	//padding: 1em;
+	margin-left: 1em;
+	border: none;
+
+}
+.rotatebutton:focus{
+
+	border: none;
+
+
+}
+.jumbotron_uwn{
+	background-color: #575756;
+	*{
+		color: white;
+	}
+}
+
+.contacts-item .icon {
+    width: 30px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.contacts-item .icon i {
+    display: block;
+    margin: auto;
+}
+
+
+
+.fa.fa-mobile,.fa.fa-envelope{
+	font-size: 150%;
+}
+
+

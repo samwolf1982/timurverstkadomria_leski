@@ -107,6 +107,15 @@ q {
 }
 body * {
   font-family: Europe;
+  color: #575757;
+}
+.about_comlplex_wrap {
+  padding-top: 5em;
+}
+.about_comlplex_wrap .row {
+  padding-top: 2em;
+  text-align: left;
+  text-indent: 1em;
 }
 #myCarousel_UP {
   top: -4em;
@@ -158,8 +167,20 @@ body * {
   font-size: xx-large;
   font-weight: bold;
 }
+.caption {
+  font-size: x-large;
+}
+.room_container {
+  padding-top: 3em;
+}
+.room_container_builder {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
 .stand {
   height: 450px;
+  background: url("/assets/img/stand.png") 50% 100% no-repeat;
+  /* Добавляем фон */
 }
 .form_div {
   border: 10px solid #c1e1f7;
@@ -232,11 +253,14 @@ body * {
   background: url("/assets/img/allimage/perfect.png") 100% 100% no-repeat;
   /* Добавляем фон */
   background-size: cover;
-  color: white;
   height: 64em;
+  padding-top: 3em;
 }
 .perfect .container {
   padding-top: 7em;
+}
+.perfect .row * {
+  color: white;
 }
 .lcol {
   border-right: 2px solid #a6c236;
@@ -274,6 +298,17 @@ body * {
   border-top: 2px solid white;
   padding-top: 1em;
   padding-bottom: 1em;
+}
+.paralax {
+  /* The image used */
+  background-image: url("/assets/img/main.png");
+  /* Full height */
+  height: 60em;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 footer {
   background-color: #575756;
@@ -385,4 +420,46 @@ footer {
 .bottom_ul li a {
   color: #FFF;
   font-size: 12px;
+}
+.wrap-stand {
+  line-height: 27;
+}
+.wrap-stand img {
+  padding-left: 3em;
+  vertical-align: middle;
+  transform: perspective(801px) rotateY(34deg) rotateX(8deg) rotate(-4deg);
+}
+.rotatebutton {
+  -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+  width: 10px;
+  height: 10px;
+  background-color: #84c4f0;
+  margin-left: 1em;
+  border: none;
+}
+.rotatebutton:focus {
+  border: none;
+}
+.jumbotron_uwn {
+  background-color: #575756;
+}
+.jumbotron_uwn * {
+  color: white;
+}
+.contacts-item .icon {
+  width: 30px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.contacts-item .icon i {
+  display: block;
+  margin: auto;
+}
+.fa.fa-mobile,
+.fa.fa-envelope {
+  font-size: 150%;
 }
