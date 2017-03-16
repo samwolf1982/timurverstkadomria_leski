@@ -98,6 +98,10 @@ blockquote,
 q {
   quotes: "" "";
 }
+body {
+  background-image: url(/assets/img/fon2.jpg);
+  background-size: 100% 100%;
+}
 @font-face {
   font-family: Europe;
   src: url(/assets/fonts/6501.ttf);
@@ -107,6 +111,9 @@ q {
 }
 body * {
   font-family: Europe;
+  color: black;
+}
+h2 {
   color: #575757;
 }
 .about_comlplex_wrap {
@@ -186,6 +193,10 @@ body * {
   border: 10px solid #c1e1f7;
   /* Параметры границы */
   padding: 3.5em;
+  border-radius: 15px;
+}
+.form_div .form-group .input-group input {
+  border-radius: 8px;
 }
 .form_div input,
 .input-group-addon {
@@ -202,6 +213,7 @@ body * {
 }
 .border_wrap {
   padding: 2em;
+  border-radius: 8px;
 }
 .border_wrap .thumbnail {
   border: none;
@@ -231,7 +243,7 @@ body * {
   margin-top: -10em;
 }
 .slider_row {
-  background: url("/assets/img/allimage/fonslider.jpg") 50% 50% no-repeat;
+  background: url("/assets/img/allimage/fonslider.png") 50% 50% no-repeat;
   /* Добавляем фон */
 }
 .slider2 {
@@ -429,7 +441,7 @@ footer {
   vertical-align: middle;
   transform: perspective(801px) rotateY(34deg) rotateX(8deg) rotate(-4deg);
 }
-.rotatebutton {
+.rotatebutton_old {
   -ms-transform: rotate(45deg);
       transform: rotate(45deg);
   width: 10px;
@@ -438,8 +450,94 @@ footer {
   margin-left: 1em;
   border: none;
 }
-.rotatebutton:focus {
+.rotatebutton_old {
+  -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+  width: 10px;
+  height: 10px;
+  background-color: #84c4f0;
+  margin-left: 1em;
   border: none;
+}
+.rotatebutton_old:focus {
+  border: none;
+}
+.rotatebutton {
+  border: none;
+  -moz-border-radius: 25px;
+  -moz-box-shadow: #6E7849 0px 0px 10px;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-border-radius: 25px;
+  -webkit-box-shadow: #6E7849 0 0 10px;
+  -webkit-transition: all 0.5s ease;
+  background-color: #84c4f0;
+  background-image: linear-gradient(90deg, #84c4f0, #84c4f0);
+  border-radius: 25px;
+  box-shadow: #6E7849 0px 0px 10px;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 1.6em;
+  margin: auto;
+  padding: 15px;
+  text-decoration: none;
+  text-shadow: #000000 5px 5px 15px;
+  transition: all 0.5s ease;
+}
+.rotatebutton:focus,
+.rotatebutton:active,
+.button2:focus,
+.button2:active {
+  -moz-border-radius: 25px;
+  -moz-box-shadow: #6E7849 0px 0px 10px;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-border-radius: 25px;
+  -webkit-box-shadow: #6E7849 0 0 10px;
+  -webkit-transition: all 0.5s ease;
+  background-color: #84c4f0;
+  background-image: linear-gradient(90deg, #84c4f0, #84c4f0);
+  border-radius: 25px;
+  box-shadow: #6E7849 0px 0px 10px;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 1.6em;
+  margin: auto;
+  padding: 15px;
+  text-decoration: none;
+  text-shadow: #000000 5px 5px 15px;
+  transition: all 0.5s ease;
+}
+.button2 {
+  -moz-border-radius: 25px;
+  -moz-box-shadow: #6E7849 0px 0px 10px;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-border-radius: 25px;
+  -webkit-box-shadow: #6E7849 0 0 10px;
+  -webkit-transition: all 0.5s ease;
+  background-color: #84c4f0;
+  background-image: linear-gradient(90deg, #84c4f0, #84c4f0);
+  border-radius: 25px;
+  box-shadow: #6E7849 0px 0px 10px;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 1.6em;
+  margin: auto;
+  padding: 15px;
+  text-decoration: none;
+  text-shadow: #000000 5px 5px 15px;
+  transition: all 0.5s ease;
+}
+.button2:hover {
+  padding: 15px;
+}
+.rotatebutton2 {
+  background-image: url(/assets/img/emptybutton.png);
+  background-size: cover;
 }
 .jumbotron_uwn {
   background-color: #575756;
@@ -460,6 +558,25 @@ footer {
   margin: auto;
 }
 .fa.fa-mobile,
-.fa.fa-envelope {
+.fa.fa-envelope,
+.fa-facebook,
+.fa-instagram,
+.fa-vk,
+.fa-youtube-play {
   font-size: 150%;
+}
+.fa-facebook-f:before,
+.fa-facebook:before,
+.fa-instagram:before,
+.fa-vk:before,
+.fa-youtube-play:before {
+  padding-right: 0.5em;
+  font-size: 121%;
+}
+.form_fill {
+  color: black;
+}
+.form_fill input,
+.form_fill textarea {
+  color: black;
 }

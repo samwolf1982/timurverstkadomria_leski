@@ -21,6 +21,8 @@
        var eventDate = Date.parse(settings['date']) / 1000;
        var currentDate = Math.floor($.now() / 1000);
        
+       console.log(eventDate);
+              console.log(currentDate);
        if(eventDate <= currentDate) {
          callback.call(this);
          clearInterval(interval);
