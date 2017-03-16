@@ -5,12 +5,20 @@
 //     font-family: Pompadur; /* Гарнитура шрифта */
 //     src: url(fonts/pompadur.ttf); /* Путь к файлу со шрифтом */
 //    }
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+// @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+// @import url('/assets/fonts/Europe.ttf');
 
-
-
-
-    
+ // @font-face {
+ //    font-family: Europe; /* Имя шрифта */
+ //    src: url(/assets/fonts/Europe.ttf); /* Путь к файлу со шрифтом */
+ //   }
+@font-face {
+    font-family: Europe; /* Имя шрифта */
+    src: url(/assets/fonts/6501.ttf); /* Путь к файлу со шрифтом */
+   }
+  body *{
+    font-family: Europe;
+  }  
 
 
 #myCarousel_UP{
@@ -85,6 +93,7 @@
 
 .about_comlplex{
 	font-size: xx-large;
+	    font-weight: bold;
 }
 // .navbar .navbar-collapse{
 // 	background-color: grey;
@@ -133,15 +142,38 @@ padding:2em;
 	//border: 1px solid #ddd;
 	.thumbnail{
 		border:none;
+		background-color:transparent;
 		img{
-			width: 99%;
+			width: 85%;
 		}
 	}
 	// height: 10em;
 }
+
+
+
 #center_image{
 	z-index: 11111;
 	    margin-top: -8em;
+	.thumbnail{
+		//border:none;
+		background-color:transparent;
+		    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+		img{
+			width: 98%;
+
+
+		}
+	}
+        
+
+	    .border_wrap{
+	    	background-color:white;
+	    }
+
 }
 // .red{
 // 	background-color:red;
@@ -162,23 +194,23 @@ padding:2em;
 // }
 
 
-.red{
-	background-color:white;
-}
-.blue{
-	background-color:white;
-}
-.green{
-	background-color:white;
+// .red{
+// 	background-color:white;
+// }
+// .blue{
+// 	background-color:white;
+// }
+// .green{
+// 	background-color:white;
 	
-}
-.gold{
-	background-color:white;
+// }
+// .gold{
+// 	background-color:white;
 	
-}
-.pink{
-	background-color:white;
-}
+// }
+// .pink{
+// 	background-color:white;
+// }
 
 
 
@@ -187,3 +219,139 @@ padding:2em;
 {
 	margin-top: -10em;
 }
+
+.slider_row{
+  background: url(@fonslider) 50% 50% no-repeat; /* Добавляем фон */
+}
+
+.slider2{
+	height: 300px;
+}
+
+#parent_image {
+	line-height: 200px;
+}
+#parent_image img {
+	vertical-align: middle;
+}
+.parent_image_news{
+	line-height: 100px;
+}
+.parent_image_news img {
+	vertical-align: middle;
+}
+
+.perfect{
+	 background: url(@perfect) 100% 100% no-repeat; /* Добавляем фон */
+		//background: url(@perfect) no-repeat; /* Добавляем фон */
+	background-size:  cover;
+
+	color:white;
+height: 64em;
+.container{
+	padding-top: 7em;
+	// line-height: 10px;
+
+}
+ 
+}
+.lcol{
+	
+	border-right: 2px solid @btn_form;
+	div{
+		text-align:right;
+		padding: 2em 0;
+	}
+
+}
+
+
+.rcol{
+	
+	div{
+		text-align:left;
+		padding: 2em 0;
+	}
+
+}
+
+.news_text{
+	padding-top: 1em;
+	text-align: left;
+	text-indent: 1em;
+
+	
+}
+.parent_image_news{
+	border-right: 2px solid @btn_form;
+	.thumbnail{
+		width: 90%;
+	}
+}
+
+.datewrap{
+	padding-top: 2em;
+}
+
+.mapwrap{
+	 background: url(@mapwrap) 100% 100% no-repeat; /* Добавляем фон */
+		//background: url(@perfect) no-repeat; /* Добавляем фон */
+	background-size:  cover;	
+	min-height: 20em;
+}
+
+#myCarousel5,.zastroi{
+		border-top: 2px solid white;
+		padding-top: 1em;
+		padding-bottom: 1em;
+}
+
+
+
+
+// footer
+
+
+
+
+
+
+// @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
+footer { background-color:#575756; min-height:350px; font-family: 'Europe', sans-serif; }
+.footerleft { margin-top:50px; padding:0 36px; }
+.logofooter { margin-bottom:10px; font-size:25px; color:#fff; font-weight:700;}
+
+.footerleft p { color:#fff; font-size:12px !important; font-family: 'Europe', sans-serif; margin-bottom:15px;}
+.footerleft p i { width:20px; color:#999;}
+
+
+.paddingtop-bottom {  margin-top:50px;}
+.footer-ul { list-style-type:none;  padding-left:0px; margin-left:2px;}
+.footer-ul li { line-height:29px; font-size:12px;}
+.footer-ul li a { color:#a0a3a4; transition: color 0.2s linear 0s, background 0.2s linear 0s; }
+.footer-ul i { margin-right:10px;}
+.footer-ul li a:hover {transition: color 0.2s linear 0s, background 0.2s linear 0s; color:#ff670f; }
+
+.social:hover {
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -o-transform: scale(1.1);
+ }
+ 
+ 
+
+ 
+ .icon-ul { list-style-type:none !important; margin:0px; padding:0px;}
+ .icon-ul li { line-height:75px; width:100%; float:left;}
+ .icon { float:left; margin-right:5px;}
+ 
+ 
+ .copyright { min-height:40px; background-color:#000000;}
+ .copyright p { text-align:left; color:#FFF; padding:10px 0; margin-bottom:0px;}
+ .heading7 { font-size:21px; font-weight:700; color:#d9d6d6; margin-bottom:22px;}
+ .post p { font-size:12px; color:#FFF; line-height:20px;}
+ .post p span { display:block; color:#8f8f8f;}
+ .bottom_ul { list-style-type:none; float:right; margin-bottom:0px;}
+ .bottom_ul li { float:left; line-height:40px;}
+ .bottom_ul li:after { content:"/"; color:#FFF; margin-right:8px; margin-left:8px;}
+ .bottom_ul li a { color:#FFF;  font-size:12px;}
