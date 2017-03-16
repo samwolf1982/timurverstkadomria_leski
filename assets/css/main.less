@@ -1,0 +1,189 @@
+@import 'reset';
+@import 'values';
+
+// @font-face {
+//     font-family: Pompadur; /* Гарнитура шрифта */
+//     src: url(fonts/pompadur.ttf); /* Путь к файлу со шрифтом */
+//    }
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+
+
+    
+
+
+#myCarousel_UP{
+	top: -4em;
+}
+.navbar-opacity{
+	z-index: 111111;
+	 // background: rgba(255, 255, 255, 0.5);
+	  background: rgba(192, 192, 192, 0.7);
+  border-radius: 3px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  height: 60px;
+
+	 //background: url(@singlepixel) 100% 100% repeat; /* Добавляем фон */
+	 //background-color: red;
+	// opacity: 0.2;
+	//background-color: grey;
+	// filter: alpha(opacity=80);
+// -webkit-filter: opacity(.2);
+//   filter: opacity(.2);
+//   color;white;
+
+}
+.navbar-brand{
+	    padding: 13px 18px 15px 15px;
+}
+// .navbar-nav{
+// 	padding-left: 5em
+// }
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+     li{
+     	a,a:active{
+     		color:white;
+
+           font-size: xx-large;
+     	}
+     	a:hover,a:focus{
+     		color:@linecolor;
+     		background-color: transparent;
+     	}
+     	
+     }
+     li.active{
+     	 a{
+     	 	color:@linecolor;
+     	 	 text-decoration: underline;
+
+              span{
+              	color: white;
+              }
+     	 } 
+     }
+   
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+
+}
+.navbar-collapse .navbar-right li a{
+	font-size: large;
+}
+
+.navbar-toggle{
+	background-color: @linecolor;
+	.icon-bar{
+		background-color: white;
+	}
+}
+
+.about_comlplex{
+	font-size: xx-large;
+}
+// .navbar .navbar-collapse{
+// 	background-color: grey;
+// }
+
+
+#myCarousel{
+    // -ms-transform: skewY(-20deg); /* IE 9 */
+    // -webkit-transform: skewY(-20deg); /* Safari */
+    // transform: skewY(-20deg); /* Standard syntax */
+}
+.stand{
+	    height: 450px;
+	// background: url(@standimage) 100% 100% no-repeat; /* Добавляем фон */
+	   
+	  //  background-size: cover; /* Масштабируем фон */
+}
+
+.form_div{
+ border: 10px solid @form_border; /* Параметры границы */	
+    padding: 3.5em;
+
+}
+
+.form_div input, .input-group-addon{
+ background-color: @linecolor;
+ color:white;
+
+
+
+}
+.submit_btn{
+	color:white;
+	background-color:@btn_form;
+
+}
+.submit_btn:hover{
+	color:white;
+	background-color:@linecolor;
+}
+
+
+.border_wrap{
+
+padding:2em;
+	//border: 1px solid #ddd;
+	.thumbnail{
+		border:none;
+		img{
+			width: 99%;
+		}
+	}
+	// height: 10em;
+}
+#center_image{
+	z-index: 11111;
+	    margin-top: -8em;
+}
+// .red{
+// 	background-color:red;
+// }
+// .blue{
+// 	background-color:blue;
+// }
+// .green{
+// 	background-color:green;
+	
+// }
+// .gold{
+// 	background-color:gold;
+	
+// }
+// .pink{
+// 	background-color:pink;
+// }
+
+
+.red{
+	background-color:white;
+}
+.blue{
+	background-color:white;
+}
+.green{
+	background-color:white;
+	
+}
+.gold{
+	background-color:white;
+	
+}
+.pink{
+	background-color:white;
+}
+
+
+
+
+.bottom_wrap_image
+{
+	margin-top: -10em;
+}

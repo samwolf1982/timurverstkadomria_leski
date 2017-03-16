@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+  </style>
+
+ <link rel="stylesheet" href="/dist/style.min.css"/>
+      <script src="/dist/main.min.js"></script>
+      <!-- Load the Paper.js library -->
+<script type="text/javascript" src="/assets/js/paper-full.js"></script>
+
+<!-- Define inlined PaperScript associate it with myCanvas -->
+<script type="text/paperscript" canvas="myCanvas">
+
+var path = new Path.Rectangle({
+    topLeft: [view.center.x-10, view.center.y-10],
+    //center:view.center,
+    bottomRight: [80, 80],
+    radius: 10,
+    strokeColor: 'black',
+     fillColor: 'black'
+});
+//path.center=view.center;
+// When the mouse is pressed on the item,
+// set its fill color to red:
+path.onMouseDown = function(event) {
+    this.fillColor = 'red';
+    console.log('dsfa');
+}
+
+// Create a raster item using the image tag with id='mona'
+//var raster = new Raster('assets/img/stand.png');
+//raster.height=420;
+//raster.scale(1.3);
+// Move the raster to the center of the view
+//raster.position = view.center;
+
+
+// set its fill color to red:
+//raster.onMouseDown = function(event) {
+//console.log('dffdsf');
+//    this.fillColor = 'red';
+//}
+
+console.log(view.center);
+
+</script>
+
+    <script src="//localhost:8585/livereload.js"></script>
+
+<!--   <script src="/dist/jquery.paper-slider.js"></script>  -->
+
+</head>
+<body>
+
+
+
+
+<nav class="navbar navbar-opacity">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">
+      	<img src="/assets/img/logo.png" alt="LOGO leska">
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#"><span> Главная </span></a></li>
+        <li><a href="#">О компании</a></li>
+        <li><a href="#">Квартиры</a></li>
+        <li><a href="#">Застройщик</a></li>
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Котакты</a></li>
+
+      </ul>
+      <ul class="navbar-right  nav navbar-nav ">
+      <!--   <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
+        <li><a href="#"> Звоните сейчас  (048) 700-41-41 </a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+<section>
+  
+
+<canvas id="myCanvas" resize style="width: 100%"></canvas>
+
+
+
+</section>
+
+<br>
+
+
+
+
+<section></section>
+
+
+
+
+
+<section>
+<div class="container text-center ">    
+  
+
+
+  <div class="row">
+  <!-- ROOMS -->
+
+
+
+
+
+   
+
+     <div class="col-sm-12 ">
+     	
+
+
+
+     </div>
+
+  </div>
+
+
+</div>
+</section>
+
+
+
+
+
+  
+<div class="container text-center"></div><br>
+
+<footer class="container-fluid text-center">
+  <p>Footer Text</p>
+</footer>
+
+</body>
+</html>
