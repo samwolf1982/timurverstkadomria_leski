@@ -116,3 +116,9 @@ var arr_text=$('.wrap-stand_text');
      });
 
 });
+
+
+
+
+
+

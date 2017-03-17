@@ -99,7 +99,6 @@ q {
   quotes: "" "";
 }
 body {
-  background-image: url(/assets/img/fon2.jpg);
   background-size: 100% 100%;
 }
 @font-face {
@@ -250,7 +249,7 @@ h2 {
   height: 300px;
 }
 #parent_image {
-  line-height: 200px;
+  line-height: 134px;
 }
 #parent_image img {
   vertical-align: middle;
@@ -313,7 +312,7 @@ h2 {
 }
 .paralax {
   /* The image used */
-  background-image: url("/assets/img/main.png");
+  background-image: url("/assets/img/allimage/main.jpg");
   /* Full height */
   height: 60em;
   /* Create the parallax scrolling effect */
@@ -510,6 +509,9 @@ footer {
   text-shadow: #000000 5px 5px 15px;
   transition: all 0.5s ease;
 }
+button:focus {
+  border: none;
+}
 .button2 {
   -moz-border-radius: 25px;
   -moz-box-shadow: #6E7849 0px 0px 10px;
@@ -579,4 +581,35 @@ footer {
 .form_fill input,
 .form_fill textarea {
   color: black;
+}
+#myModal,
+#myModal_callback {
+  top: 8em;
+  border-radius: 10px;
+}
+#myModal .modal-header,
+#myModal_callback .modal-header {
+  background-color: #def4ca;
+}
+#myModal .modal-content,
+#myModal_callback .modal-content,
+#myModal .modal-header,
+#myModal_callback .modal-header {
+  border-radius: 10px;
+}
+#myModal .modal-contentP,
+#myModal_callback .modal-contentP {
+  text-indent: 1em;
+}
+.navbar .navbar-nav li a,
+.navbar .navbar-nav li a:active {
+  color: #fff;
+  font-size: x-large;
+}
+#myNavbar span {
+  color: white;
+}
+.zastroitext {
+  text-align: left;
+  text-indent: 1em;
 }

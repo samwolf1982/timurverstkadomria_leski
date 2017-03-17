@@ -22,7 +22,8 @@ module.exports = function(grunt) {
                     paths: ["assets/css"]
                 },
                 files: {
-                    "dist/style.css": "assets/css/main.less"
+                    "dist/style.css": "assets/css/main.less",
+                    "dist/media.css": "assets/css/media.less"
                 }
             }
         },
@@ -41,7 +42,8 @@ module.exports = function(grunt) {
                     report: 'gzip'
                 },
                 files: {
-                    'dist/style.min.css': ['dist/style.css']
+                    'dist/style.min.css': ['dist/style.css'],
+                     'dist/media.min.css': ['dist/media.css']
                 }
             }
         },
