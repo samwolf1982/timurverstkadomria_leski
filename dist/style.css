@@ -307,19 +307,23 @@ h2 {
 #myCarousel5,
 .zastroi {
   border-top: 2px solid white;
-  padding-top: 1em;
+  padding-top: 3em;
   padding-bottom: 1em;
 }
 .paralax {
   /* The image used */
   background-image: url("/assets/img/allimage/main.jpg");
   /* Full height */
-  height: 60em;
+  height: 1000px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.img_obb {
+  max-width: 100%;
+  height: auto;
 }
 footer {
   background-color: #575756;
@@ -462,52 +466,32 @@ footer {
   border: none;
 }
 .rotatebutton {
+  background-image: url('/assets/img/our/b1.png');
+  width: 110px;
+  height: 110px;
   border: none;
-  -moz-border-radius: 25px;
-  -moz-box-shadow: #6E7849 0px 0px 10px;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  -webkit-border-radius: 25px;
-  -webkit-box-shadow: #6E7849 0 0 10px;
-  -webkit-transition: all 0.5s ease;
-  background-color: #84c4f0;
-  background-image: linear-gradient(90deg, #84c4f0, #84c4f0);
-  border-radius: 25px;
-  box-shadow: #6E7849 0px 0px 10px;
-  color: #ffffff;
-  display: inline-block;
-  font-size: 1.6em;
-  margin: auto;
-  padding: 15px;
-  text-decoration: none;
-  text-shadow: #000000 5px 5px 15px;
-  transition: all 0.5s ease;
+  background-color: transparent;
+  color: white;
+  font-size: xx-large;
+  font-weight: 900;
+  line-height: 19px;
+  outline: none;
+  padding-bottom: 18px;
 }
 .rotatebutton:focus,
 .rotatebutton:active,
 .button2:focus,
 .button2:active {
-  -moz-border-radius: 25px;
-  -moz-box-shadow: #6E7849 0px 0px 10px;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  -webkit-border-radius: 25px;
-  -webkit-box-shadow: #6E7849 0 0 10px;
-  -webkit-transition: all 0.5s ease;
-  background-color: #84c4f0;
-  background-image: linear-gradient(90deg, #84c4f0, #84c4f0);
-  border-radius: 25px;
-  box-shadow: #6E7849 0px 0px 10px;
-  color: #ffffff;
-  display: inline-block;
-  font-size: 1.6em;
-  margin: auto;
-  padding: 15px;
-  text-decoration: none;
-  text-shadow: #000000 5px 5px 15px;
-  transition: all 0.5s ease;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+.grass {
+  background: url('/assets/img/our/grass.png') 100% 100% no-repeat;
+}
+.grass1 {
+  height: 50px;
+  margin-top: -50px;
 }
 button:focus {
   border: none;
@@ -589,7 +573,7 @@ button:focus {
 }
 #myModal .modal-header,
 #myModal_callback .modal-header {
-  background-color: #def4ca;
+  background-color: #a6c236;
 }
 #myModal .modal-content,
 #myModal_callback .modal-content,
@@ -612,4 +596,38 @@ button:focus {
 .zastroitext {
   text-align: left;
   text-indent: 1em;
+}
+.button_select {
+  -moz-border-radius: 7px;
+  -moz-box-shadow: #6E7849 0px 0px 10px;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-border-radius: 7px;
+  -webkit-box-shadow: #6E7849 0 0 10px;
+  -webkit-transition: all 0.5s ease;
+  background-color: #a6c236;
+  background-image: radial-gradient(center 29deg, circle contain, #a6c236, #a6c236);
+  border-radius: 7px;
+  border: 1px solid #4a5032;
+  box-shadow: #6E7849 0px 0px 10px;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 1.1em;
+  margin: auto;
+  padding: 15px;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.button_select:hover {
+  padding: 15px;
+}
+.select_room {
+  padding: 2em;
+}
+.coll_now {
+  bottom: 0.5em;
+}
+.footer-ul li {
+  padding-top: 0.7em;
 }
