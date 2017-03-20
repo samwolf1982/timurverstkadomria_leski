@@ -36,6 +36,9 @@
   .navbar-brand {
     display: initial;
   }
+  #myNavbar {
+    background-color: grey;
+  }
 }
 /* Extra Small Devices, Phones */
 /* Extra Small Devices, Phones */

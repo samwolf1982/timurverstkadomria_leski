@@ -1,7 +1,7 @@
   // cooler
     $(document).ready(function(){
 
-var ci=$("#center_image");
+
 // console.log("ready");
 
 
@@ -20,8 +20,8 @@ $('.border_wrap').on('click',function(event) {
       return true;
  }
 
-
-
+$("#center_image .border_wrap_center .thumbnail .galerybox_u").empty();
+var ci=$("#center_image");
 //----------
   var gate=false;
  if ( $(this).hasClass('border_wrap_down')) {
@@ -32,8 +32,10 @@ $('.border_wrap').on('click',function(event) {
   /* Act on the event */
 
   var parent=$(this).parent();
+
 var curent=ci.children();
 var th=$(this);
+
 // curent.fadeIn('slow', function() {
   
 // });
@@ -67,7 +69,7 @@ curent.removeClass('border_wrap_center');
     th.prepend(th.children('.caption').remove());
    // console.dir();
  }
-
+ 
  // <a href="/assets/img/allimage/l4.jpg" data-fancybox data-caption="">
  //     <img hidden="true" id="rc-3" src="/assets/img/allimage/4.jpg" width="360" height="240" alt="">
 
@@ -80,20 +82,69 @@ var filename = th.find('img').attr('src').substr(fileNameIndex);
  var new_name=full_img_path.replace(filename,'l'+filename);
   console.log(new_name);
   var c_image=curent.find('img');
+
+  // var galerybox_u=curent.children('.galerybox_u').clone();
   curent.find('a').remove();
+  
   curent.children('.thumbnail').append(c_image);
 
- var a_inner= '<a id="dodo" href="'+new_name+'" data-fancybox data-caption=""></a>';
- // var a_inner = document.createElement('a');
- // a_inner.append(img_inner);
+
+ var a_inner= '<a id="dodo" href="'+new_name+'" data-fancybox="gallery" data-caption=""></a>';
+
   th.children('.thumbnail').html(a_inner);
   $('#dodo').append(img_inner);
-  // ркбочи код !!!!!!!!!!! вствка только ид
-  // curent.children('.thumbnail').append( $('<a/>')
-  //   .attr("id", "newDiv2")
-  //   .addClass("newDiv purple bloated")
-  //   .append(img_inner)
-  //     );
+
+
+//     <a  data-fancybox="gallery" href="/assets/img/allimage/cooler/3/1.jpg"></a>
+//     <a  data-fancybox="gallery" href="/assets/img/allimage/cooler/3/2.jpg"></a>
+//     <a  data-fancybox="gallery" href="/assets/img/allimage/cooler/3/3.jpg"></a>
+// </div>
+
+
+
+//var id_folder=1;
+if (img_inner.attr('id')=='rc-1') {
+id_folder=1;
+}
+if (img_inner.attr('id')=='rc-2') {
+id_folder=2;
+}
+if (img_inner.attr('id')=='rc-3') {
+id_folder=3;
+}
+if (img_inner.attr('id')=='rc-4') {
+id_folder=4;
+}
+if (img_inner.attr('id')=='rc-5') {
+id_folder=5;
+}
+// console.log(galerybox_u);
+jQuery('<div/>', {
+    class:'hidden galerybox_u',
+}).appendTo('.border_wrap_center .thumbnail');
+
+//     for (var i =1 ; i < 6; i++) {
+//    $('.border_wrap_center .thumbnail .hidden.galerybox_u').append('<a  data-fancybox="gallery" href="/assets/img/allimage/cooler/'+id_folder+'/'+i+'.jpg"></a>');     
+// }
+
+  for (var i =1 ; i < 6; i++) {
+if (id_folder==i) continue;
+   $('.border_wrap_center .thumbnail .hidden.galerybox_u').append(' <a  data-fancybox="gallery" href="/assets/img/allimage/l'+i+'.jpg"></a>');     
+}
+
+
+  $("[data-fancybox]").fancybox({
+    // Options will go here
+  beforeClose: function(instance, current, e ){
+     $('.navbar-opacity').show();  
+
+  },
+  beforeLoad: function(instance, current, e ){
+     $('.navbar-opacity').hide();  
+  },
+  });
+
+
 
 
  // curent.children('.thumbnail a').append(img_inner);
