@@ -2,29 +2,34 @@
     $(document).ready(function(){
 
 
-// console.log("ready");
+// //console.log("ready");
 
 
-
+var start_change=true;
 
 $('.border_wrap').on('click',function(event) {
  // var center=false;
+
+
  if ( $(this).hasClass('border_wrap_center')) {
-      console.log("center");
+      //console.log("center");
      var img= $(this).children('.thumbnail').children('img');
-        console.log(img.attr('id'));
+        //console.log(img.attr('id'));
      // $.fancybox.open('<div class="message"><h2>Hello!</h2><p>You are awesome!</p></div>'); 
      // $.fancybox.open(img.innerHTML); 
 
       event.preventDefault();
       return true;
  }
-
+ if (start_change!=true) return true;; 
+start_change=false;
 $("#center_image .border_wrap_center .thumbnail .galerybox_u").empty();
 var ci=$("#center_image");
 //----------
   var gate=false;
- if ( $(this).hasClass('border_wrap_down')) {
+ // if ( $(this).hasClass('border_wrap_down')) {
+  console.log(this);
+   if ( $(this).hasClass('border_wrap_up')) {
  gate=true;
  }
 
@@ -36,15 +41,15 @@ var ci=$("#center_image");
 var curent=ci.children();
 var th=$(this);
 
-// curent.fadeIn('slow', function() {
+// curent.fadeIn('400', function() {
   
 // });
-curent.fadeOut('slow', function() {
+curent.fadeOut('400', function() {
  ci.hide();
  ci.append(th);
  parent.append(curent); 
 curent.show();
- ci.fadeIn('slow', function() {
+ ci.fadeIn('400', function() {
    
  });
  
@@ -55,21 +60,21 @@ curent.removeClass('border_wrap_center');
 
 
 
-
+   console.log('clik '+gate);
  if (gate) {
-   console.log('bottoom '+ th.attr('class'));
-      console.log('bottoom2 '+ curent.attr('class'));
-      th.removeClass('border_wrap_down');
-     
-   curent.addClass('border_wrap_down');   
-       //curent.first().remove();;
-      
-  // curent.children('.caption').remove();
-   curent.append(curent.children('.caption').remove());
-    th.prepend(th.children('.caption').remove());
-   // console.dir();
+   console.log('upp '+ th.attr('class'));
+      //console.log('bottoom2 '+ curent.attr('class'));
+       th.removeClass('border_wrap_up');     
+       curent.addClass('border_wrap_up');   
+
+    
+   //curent.children('.caption').remove();      
+    curent.prepend(curent.children('.caption').remove()); // back
+//th.children('.caption').remove();
+    // th.append(th.children('.caption').remove());
+   
  }
- 
+// return;
  // <a href="/assets/img/allimage/l4.jpg" data-fancybox data-caption="">
  //     <img hidden="true" id="rc-3" src="/assets/img/allimage/4.jpg" width="360" height="240" alt="">
 
@@ -80,19 +85,20 @@ curent.removeClass('border_wrap_center');
 var filename = th.find('img').attr('src').substr(fileNameIndex);
 
  var new_name=full_img_path.replace(filename,'l'+filename);
-  console.log(new_name);
+  //console.log(new_name);
   var c_image=curent.find('img');
 
   // var galerybox_u=curent.children('.galerybox_u').clone();
   curent.find('a').remove();
   
   curent.children('.thumbnail').append(c_image);
-
+   th.append(th.children('.caption').remove());//from gate
 
  var a_inner= '<a id="dodo" href="'+new_name+'" data-fancybox="gallery" data-caption=""></a>';
 
   th.children('.thumbnail').html(a_inner);
-  $('#dodo').append(img_inner);
+  $('#dodo').prepend(img_inner);
+
 
 
 //     <a  data-fancybox="gallery" href="/assets/img/allimage/cooler/3/1.jpg"></a>
@@ -118,7 +124,7 @@ id_folder=4;
 if (img_inner.attr('id')=='rc-5') {
 id_folder=5;
 }
-// console.log(galerybox_u);
+// //console.log(galerybox_u);
 jQuery('<div/>', {
     class:'hidden galerybox_u',
 }).appendTo('.border_wrap_center .thumbnail');
@@ -156,6 +162,8 @@ if (id_folder==i) continue;
 
 
   //$("#center_image img").toggleClass('img-thumbnail');;
+start_change=true;
+
 });
 
 });
@@ -167,7 +175,7 @@ if (id_folder==i) continue;
  // image
       $(document).ready(function(){
      // $('.wrap-stand').append($('#ri-1'));
-      $('#r-1').fadeIn('slow', function() {        
+      $('#r-1').fadeIn('400', function() {        
       });
 
 var arr_image=$('.wrap-stand img');
@@ -179,8 +187,8 @@ var arr_image=$('.wrap-stand img');
 
          arr_image.each(function(index, el) {
                  if ($(this).is(':visible')) {
-                  $(this).fadeOut('slow', function() {
-                        $(idkey).fadeIn('slow', function() {
+                  $(this).fadeOut('400', function() {
+                        $(idkey).fadeIn('400', function() {
                           
                         }); 
                   });
@@ -197,7 +205,7 @@ var arr_image=$('.wrap-stand img');
 
 
             $(document).ready(function(){
-      $('#tr-1').fadeIn('slow', function() {        
+      $('#tr-1').fadeIn('400', function() {        
       });
 
 var arr_text=$('.wrap-stand_text');
@@ -209,8 +217,8 @@ var arr_text=$('.wrap-stand_text');
 
          arr_text.each(function(index, el) {
                  if ($(this).is(':visible')) {
-                  $(this).fadeOut('slow', function() {
-                        $(idkey_t).fadeIn('slow', function() {
+                  $(this).fadeOut('400', function() {
+                        $(idkey_t).fadeIn('400', function() {
                           
                         }); 
                   });

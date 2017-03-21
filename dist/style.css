@@ -98,9 +98,6 @@ blockquote,
 q {
   quotes: "" "";
 }
-body {
-  background-size: 100% 100%;
-}
 @font-face {
   font-family: Europe;
   src: url(/assets/fonts/6501.ttf);
@@ -439,7 +436,6 @@ footer {
 .wrap-stand img {
   padding-left: 3em;
   vertical-align: middle;
-  transform: perspective(801px) rotateY(34deg) rotateX(8deg) rotate(-4deg);
   margin-top: 2em;
 }
 .rotatebutton_old {
@@ -683,4 +679,48 @@ i.margin-top-5.fa.fa-odnoklassniki:before {
 }
 .wrap_news {
   padding-bottom: 2em;
+}
+#myModal_callback {
+  z-index: 111111;
+}
+.form-control::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: white;
+}
+.form-control:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: white;
+  opacity: 1;
+}
+.form-control::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: white;
+  opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
+}
+.form-control:-moz-placeholder {
+  color: white;
+}
+.form-control::-webkit-input-placeholder {
+  color: white;
+}
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1111111;
+}
+#navbarCollapse ul li a span {
+  color: white;
+}
+.navbar-toggle {
+  position: absolute;
+}
+.navbar .navbar-nav li a,
+.navbar .navbar-nav li a:active {
+  padding-left: 0;
 }
